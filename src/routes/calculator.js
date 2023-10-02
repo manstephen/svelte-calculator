@@ -1,5 +1,3 @@
-import { writable } from "svelte/store";
-
 export const operators = {
 	'+': { isBinary: true, operation: (a,b)=>(a+b) },
 	'-': { isBinary: true, operation: (a,b)=>(a-b) },
