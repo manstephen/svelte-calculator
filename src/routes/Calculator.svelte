@@ -1,5 +1,5 @@
 <script>
-	import { calculate } from './calculator'	
+	import { calculate } from './newCalculator'	
 	const buttonRows = [
 		["%", "CE", "C", "Del"],
 		["1/x", "x2", "sqr", "/"],
@@ -13,6 +13,9 @@
 
         const handleInput = (input) => {
 		displayValue = calculate(input);
+		if(!Number(displayValue)) {
+			displayValue = '0'
+		}
 	}
 </script>
 
